@@ -67,11 +67,29 @@ main{
   padding: 5px;
 }
 
+/* specificity: (0,0,1)
+   ID = 0
+   Class = 0
+   Element = 1
+   Total score = 1
+*/
 
 address{
      background-color: rgb(63, 62, 62);
   padding:10px;
   color: white;
+}
+/* specificity: (0,0,2)
+   ID = 0
+   Class = 0
+   Elements = 2 -> address + h2
+   Total score = 2
+
+   This selector is more specific than "h2" alone,
+   because address h2 has 2 element selectors while h2 has only 1.
+*/
+address h2{
+  color: blanchedalmond;
 }
 address iframe{
   
