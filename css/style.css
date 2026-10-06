@@ -1,89 +1,86 @@
-/* ===== Step 2: Type Selectors ===== */
-
-h1 {
-  color: darkslateblue;
-  font-size: 40px;
+body{
+  font-family: Arial, Helvetica, sans-serif;
 }
-
-h2 {
-  color: teal;
-  font-size: 28px;
+header{
+  background-color: rgb(63, 62, 62);
+  padding:10px;
 }
-
-nav a {
-  text-transform: uppercase;
-  font-weight: bold;
+header a{
+  color: white;
+  padding-right: 20px;
+  font-size: 20px;
 }
-
-footer {
-  background-color: #333333;
+header img{
+  padding: 10px;
+}
+main img{
+ width: 100%;
+}
+footer{
+     background-color: rgb(63, 62, 62);
+  padding:10px;
   color: white;
 }
-
-/* ===== Step 3: Class Selectors ===== */
-
-.artist-card {
-  border: 2px solid darkslateblue;
-  border-radius: 10px;
-  background-color: lavender;
+footer iframe{
+  
+  width:250px;
+  height: 250px;
+  display:inline-flex;;
+}
+footer section{
+    display: inline-block;
 }
 
-.thumbnail {
-  border: 3px solid #333333;
-  border-radius: 8px;
+.artist{
+  width: 27%;
+  background-color: dimgray;
+  color:white;
+   float: left;
+   padding: 15px;
+   margin: 10px;
+   box-shadow: rgba(0, 0, 0, 0.6) 0px 7px 29px 0px;
 }
 
-/* ===== Step 4: Id Selectors ===== */
-
-#vangogh h2 {
-  color: goldenrod;
+.artist img{
+  width: 150px;
+}
+.gallery{
+    width: 90%;
+    text-align: center;
+  background-color: dimgray;
+  color:white;
+   padding: 15px;
+   margin: 10px;
+   text-align: center;
+   box-shadow: rgba(0, 0, 0, 0.6) 0px 7px 29px 0px;
+   border-radius: 20px;
+}
+.gallery figure{
+  width:23%; 
+  display: inline-block;
 }
 
-#monet h2 {
-  color: cornflowerblue;
+details img{
+  width:50%;
+}
+main{
+  padding: 5px;
 }
 
-#rembrandt h2 {
-  color: saddlebrown;
-}
 
-#welcome-text {
-  font-size: 22px;
-}
-
-/* ===== Step 5: Parent + Child Selectors ===== */
-
-header nav a {
-  color: darkslateblue;
-}
-
-main article h2 {
-  font-size: 32px;
-}
-
-footer a {
+address{
+     background-color: rgb(63, 62, 62);
+  padding:10px;
   color: white;
 }
-
-/* ===== Step 6: Specificity Check ===== */
-
-/*
-  The "Visit Us" <h2> in visit.html has class="section-title".
-  Two rules try to color it:
-    h2             { color: teal; }     (type selector, Step 2)
-    .section-title { color: crimson; }  (class selector, below)
-  Crimson wins: a class selector is more specific than a type selector,
-  so it wins no matter which rule comes first in the file.
-*/
-
-.section-title {
-  color: crimson;
+address iframe{
+  
+  width:250px;
+  height: 250px;
+  display:inline-flex;;
 }
-
-/*
-  Specificity scores (id, class, type):
-    h2              -> (0, 0, 1)  one type
-    .artist-card    -> (0, 1, 0)  one class
-    #vangogh h2     -> (1, 0, 1)  one id + one type
-    header nav a    -> (0, 0, 3)  three types
-*/
+#mp4{
+  width:50%;
+ 
+  text-align: center;
+}
